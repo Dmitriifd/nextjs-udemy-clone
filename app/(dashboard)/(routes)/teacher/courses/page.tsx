@@ -1,11 +1,14 @@
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const CoursesPage = async () => {
-
   return (
-    <div>
-      CoursesPage
+    <div className='p-6'>
+      <Link href='/teacher/create'>
+        <Button>New Course</Button>
+      </Link>
     </div>
-   );
-}
+  );
+};
 
 export default CoursesPage;
